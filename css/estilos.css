@@ -1,0 +1,219 @@
+/* === Paleta de colores (Extraída de Adobe XD) === */
+:root {
+  --color-blanco: #FFFFFF;
+  --color-azul-oscuro: #001C3D;
+  --color-azul-intermedio: #033D7D;
+  --color-gris-claro: #00000029;
+  --color-azul-vivo: #095AB2;
+  --color-azul-suave: #E6EDFF;
+  --color-gris-fondo: #EBECEF;
+  --color-azul-profundo: #052F5F;
+  --color-amarillo-acento: #FFAD2D;
+  --color-verde-iconos: #28a745;
+  --color-verde-oscuro: #A8E6A3;
+  --color-muted-oscuro: #c0c0c0;
+}
+
+body {
+  background-color: var(--color-gris-fondo);
+  color: var(--color-azul-oscuro);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.card {
+  background-color: var(--color-blanco);
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.2s; }
+.card:nth-child(4) { animation-delay: 0.3s; }
+.card:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-title,
+h1, h2, h5 {
+  color: var(--color-azul-profundo);
+}
+
+h6 {
+  color: var(--color-azul-intermedio);
+}
+
+.card-title i,
+h2 i,
+h5 i {
+  color: var(--color-amarillo-acento);
+}
+
+.btn-primary {
+  background-color: var(--color-azul-vivo);
+  border-color: var(--color-azul-vivo);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary,
+.btn-outline-info {
+  color: var(--color-azul-vivo);
+  border-color: var(--color-azul-vivo);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-info:hover {
+  background-color: var(--color-azul-vivo);
+  color: white;
+}
+
+a {
+  color: var(--color-azul-vivo);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-azul-oscuro);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* ================= MODO OSCURO ================= */
+body.dark-mode {
+  background-color: var(--color-azul-profundo);
+  color: var(--color-blanco);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode .card {
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  border: none;
+}
+
+body.dark-mode .card-title,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--color-amarillo-acento);
+}
+
+body.dark-mode a,
+body.dark-mode .btn-outline-info {
+  color: var(--color-amarillo-acento);
+  border-color: var(--color-amarillo-acento);
+}
+
+body.dark-mode .btn-outline-info:hover {
+  background-color: var(--color-amarillo-acento);
+  color: var(--color-azul-oscuro);
+}
+
+body.dark-mode .btn-primary {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+body.dark-mode .btn-outline-primary,
+body.dark-mode .btn-outline-dark {
+  border-color: var(--color-amarillo-acento);
+  color: var(--color-amarillo-acento);
+}
+
+body.dark-mode .btn-outline-primary:hover,
+body.dark-mode .btn-outline-dark:hover {
+  background-color: var(--color-amarillo-acento);
+  color: var(--color-azul-oscuro);
+}
+
+body.dark-mode .text-primary {
+  color: var(--color-amarillo-acento) !important;
+}
+
+body.dark-mode .text-success {
+  color: var(--color-amarillo-acento) !important;
+}
+
+body.dark-mode hr {
+  border-color: #444;
+}
+
+body.dark-mode .text-muted {
+  color: var(--color-muted-oscuro) !important;
+  font-style: italic;
+}
+
+/* Footer */
+.footer-with-signature {
+  border-top: 1px solid #dee2e6;
+  margin-top: 4rem;
+  background-color: var(--color-blanco);
+}
+
+.footer-signature {
+  width: 80px;
+  height: auto;
+  opacity: 0.7;
+  user-select: none;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+body.dark-mode .footer-signature {
+  filter: brightness(4);
+  opacity: 0.5;
+}
+
+/* Logo de fondo en cards */
+.card-bg-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0.07;
+  filter: blur(1px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+/* Imagen de perfil destacada */
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--color-azul-oscuro);
+  background-color: var(--color-blanco);
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .card-body .btn {
+    width: 100%;
+  }
+
+  .profile-picture {
+    width: 140px;
+    height: 140px;
+  }
+}

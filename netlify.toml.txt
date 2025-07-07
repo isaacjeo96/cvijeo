@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "index.html"
+  to = "cv-es.html"
+  status = 301
+  force = false
+  query = {path = ":cvijeo/cv-es.html"}
+  conditions = {Language = ["es"], Country = ["UMX"], Role = ["admin"]}
+
+
+

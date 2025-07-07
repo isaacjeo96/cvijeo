@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Isaac Espinoza</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <!-- Custom Script -->
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <main class="container py-5" id="cv-content">
+      <!-- Buttons (top right corner) -->
+      <nav class="position-absolute top-0 end-0 m-2 d-flex gap-2 no-print">
+        <button id="toggle-dark" class="btn btn-sm btn-outline-secondary">
+          <i class="fas fa-moon me-1"></i> Dark Mode
+        </button>
+        <button
+          class="btn btn-sm btn-outline-info"
+          onclick="window.location.href='cv-es.html'"
+        >
+          <i class="fas fa-language me-1"></i> Spanish Version
+        </button>
+
+        <button id="download-pdf" class="btn btn-danger">
+          <i class="fas fa-file-pdf me-2"></i> PDF
+        </button>
+      </nav>
+      <!-- Header: Photo | Name | Titles -->
+      <header class="card mb-4 shadow">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-3 text-center p-3">
+            <img
+              src="assets/img/profile-isaac.jpg"
+              alt="Isaac Jair Espinoza
+            Ocampo"
+              class="img-fluid rounded-circle border border-3"
+            />
+          </div>
+          <div class="col-md-9">
+            <div class="card-body position-relative">
+              <!-- Title and subtitle -->
+              <h1 class="card-title mb-1">Isaac Jair Espinoza Ocampo</h1>
+              <h6 class="card-text text-muted fs-5">
+                <i class="fas fa-laptop-code me-2"></i>.NET Developer
+                <!-- <span class="mx-2">|</span>
+                <i class="fas fa-user-graduate me-2"></i>Informatics Graduate -->
+              </h6>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Professional Profile -->
+      <div class="card mb-4 shadow">
+        <div class="card-body">
+          <h2 class="card-title">
+            <i class="fas fa-user me-2 text-primary"></i>Professional Profile
+          </h2>
+          <p class="card-text">
+            I am a .NET developer with over 5 years of experience building
+            applications for both public and private sectors. I am currently
+            working at the <strong>Federal Judiciary Council</strong>,
+            contributing to the design and maintenance of internal
+            administrative systems based on technologies such as
+            <strong>.NET Core, SQL Server, and REST APIs</strong>.
+          </p>
+          <p class="card-text">
+            I have also worked on solutions for e-commerce and insurance,
+            implementing MVC architectures, robust validations using jQuery and
+            C#, and consuming both SOAP and REST services. I am passionate about
+            continuous learning, process optimization, and developing clean,
+            modular, and scalable code.
+          </p>
+          <p class="card-text mb-0">
+            Additionally, I have solid knowledge of frontend development using
+            <strong>HTML, CSS, JavaScript, and Bootstrap</strong>, and I easily
+            adapt to new challenges and technologies.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact | Technical Skills | Languages | Soft Skills -->
+      <div class="row mb-4 g-4">
+        <!-- Contact -->
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-address-book me-2 text-primary"></i>Contact
+              </h5>
+              <p class="mb-2">
+                <i class="fas fa-envelope text-secondary me-2"></i>
+                <a href="mailto:isaacjeo96@gmail.com">isaacjeo96@gmail.com</a>
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-phone text-secondary me-2"></i>
+                <a href="tel:5527427050">5527427050</a>
+              </p>
+              <p class="mb-3">
+                <i class="fas fa-map-marker-alt text-secondary me-2"></i>Mexico
+                City
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a
+                  href="https://wa.me/525527427050?text=Hello%20Isaac,%20I%20saw%20your%20resume%20and%20would%20like%20to%20get%20in%20touch."
+                  target="_blank"
+                  class="btn btn-success w-100"
+                >
+                  <i class="fab fa-whatsapp me-2"></i>Send WhatsApp
+                </a>
+                <a
+                  href="mailto:isaacjeo96@gmail.com?subject=Interested%20in%20your%20resume&body=Hi%20Isaac,%20I'd%20like%20to%20talk%20to%20you%20about%20an%20opportunity."
+                  class="btn btn-primary w-100"
+                >
+                  <i class="fas fa-envelope me-2"></i>Send Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-tools me-2 text-primary"></i>Technical Skills
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>.NET Core
+                  / Framework
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>SQL
+                  Server / LINQ / EF
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>HTML,
+                  CSS, JavaScript
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i
+                  >Bootstrap, AJAX, jQuery
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>REST &
+                  SOAP APIs
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Git,
+                  Postman, Visual Studio
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-language me-2 text-primary"></i>Languages
+              </h5>
+              <p class="mb-2"><strong>Spanish:</strong> Native</p>
+              <p class="mb-3"><strong>English:</strong> B2</p>
+
+              <hr />
+
+              <h6 class="text-muted mb-2">
+                <i class="fas fa-link me-2 text-primary"></i>Professional
+                Profiles
+              </h6>
+              <div class="d-flex flex-wrap gap-2">
+                <a
+                  href="https://github.com/isaacjeo96"
+                  target="_blank"
+                  class="btn btn-outline-dark btn-sm"
+                >
+                  <i class="fab fa-github me-1"></i> GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/isaacjeo96/"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  <i class="fab fa-linkedin me-1"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-user-friends me-2 text-primary"></i>Soft Skills
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Teamwork
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Effective
+                  communication
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Problem
+                  solving
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i
+                  >Adaptability
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i
+                  >Self-learning
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i
+                  >Organization and focus
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience: Federal Judiciary Council -->
+      <div class="card mb-4 shadow position-relative overflow-hidden">
+        <img
+          src="assets/img/logo-cjf.png"
+          alt="Logo CJF"
+          class="card-bg-logo"
+        />
+        <div class="card-body position-relative">
+          <h2 class="card-title">
+            <i class="fas fa-briefcase me-2 text-primary"></i>Consejo de la
+            Judicatura Federal
+          </h2>
+          <h6 class="text-muted mb-3">
+            .NET Developer | November 2023 - Present
+          </h6>
+          <ul class="mb-0">
+            <li>
+              <i class="fas fa-code me-2 text-success"></i>Development and
+              maintenance of internal administrative systems using .NET
+              Framework and .NET Core with C#.
+            </li>
+            <li>
+              <i class="fas fa-search me-2 text-success"></i>Implemented a full
+              CRUD system using <strong>ElasticSearch</strong> as a search
+              engine, simulating a relational database for fast queries.
+            </li>
+            <li>
+              <i class="fas fa-network-wired me-2 text-success"></i>Integrated
+              RESTful APIs to automate judicial procedures.
+            </li>
+            <li>
+              <i class="fas fa-sitemap me-2 text-success"></i>Applied layered
+              architecture to ensure maintainability and scalability.
+            </li>
+            <li>
+              <i class="fas fa-database me-2 text-success"></i>Designed complex
+              SQL Server queries to generate strategic and operational reports.
+            </li>
+            <li>
+              <i class="fas fa-cogs me-2 text-success"></i>Implemented stored
+              procedures, functions, and triggers for managing critical data.
+            </li>
+            <li>
+              <i class="fas fa-check-double me-2 text-success"></i>Collaborated
+              on functional analysis and UAT testing with multidisciplinary
+              teams.
+            </li>
+            <li>
+              <i class="fas fa-user-shield me-2 text-success"></i>Performed
+              advanced validations for security and sensitive data control.
+            </li>
+            <li>
+              <i class="fas fa-chart-line me-2 text-success"></i>Optimized
+              internal processes with back-office automation.
+            </li>
+            <li>
+              <i class="fas fa-file-alt me-2 text-success"></i>Created technical
+              and functional documentation for version control and auditing.
+            </li>
+            <li>
+              <i class="fas fa-hands-helping me-2 text-success"></i>Provided
+              technical support to administrative users on new features.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Work Experience: DIGIS01 -->
+      <div class="card mb-4 shadow position-relative overflow-hidden">
+        <img
+          src="assets/img/logo-digis01.png"
+          alt="Logo Digis01"
+          class="card-bg-logo"
+        />
+        <div class="card-body position-relative">
+          <h2 class="card-title">
+            <i class="fas fa-briefcase me-2 text-primary"></i>DIGIS01 Soluciones
+            Digitales
+          </h2>
+          <h6 class="text-muted mb-3">
+            .NET Developer | August 2020 - November 2023
+          </h6>
+          <ul class="mb-0">
+            <li>
+              <i class="fas fa-store me-2 text-success"></i>Developed an
+              e-commerce platform using .NET Framework for product and sales
+              management.
+            </li>
+            <li>
+              <i class="fas fa-shield-alt me-2 text-success"></i>Participated in
+              an insurance system project using .NET Core, consuming both SOAP
+              and REST services.
+            </li>
+            <li>
+              <i class="fas fa-code me-2 text-success"></i>Implemented MVC
+              pattern in web projects with HTML, CSS, JavaScript, and AJAX.
+            </li>
+            <li>
+              <i class="fas fa-layer-group me-2 text-success"></i>Structured
+              applications using layered architecture to enhance maintainability
+              and scalability.
+            </li>
+            <li>
+              <i class="fas fa-database me-2 text-success"></i>Designed and
+              modified database structures in SQL Server.
+            </li>
+            <li>
+              <i class="fas fa-file-code me-2 text-success"></i>Created stored
+              procedures for CRUD operations on products and users.
+            </li>
+            <li>
+              <i class="fa-solid fa-user-check me-2 text-success"></i>Validated
+              data using server-side DataAnnotations in C#.
+            </li>
+            <li>
+              <i class="fas fa-bolt me-2 text-success"></i>Used scaffold in
+              Visual Studio to auto-generate database models.
+            </li>
+            <li>
+              <i class="fas fa-chalkboard-teacher me-2 text-success"></i>Taught
+              programming classes to technical staff and new hires.
+            </li>
+            <li>
+              <i class="fas fa-users-cog me-2 text-success"></i>Led internal
+              project teams, task assignment, and technical supervision.
+            </li>
+            <li>
+              <i class="fas fa-boxes me-2 text-success"></i>Managed IT inventory
+              to ensure availability and control of equipment.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow position-relative overflow-hidden">
+        <img
+          src="assets/img/logo-unam.png"
+          alt="Logo UNAM"
+          class="card-bg-logo"
+        />
+        <div class="card-body position-relative">
+          <h2 class="card-title">
+            <i class="fas fa-briefcase me-2 text-primary"></i>Dirección General
+            de Bibliotecas UNAM
+          </h2>
+          <h6 class="text-muted mb-3">
+            Servicio Social | October 2019 - March 2020
+          </h6>
+          <ul class="mb-0">
+            <li>
+              <i class="fas fa-globe me-2 text-success"></i>Created and modified
+              institutional web portals using <strong>Joomla</strong> and
+              <strong>HTML</strong>.
+            </li>
+            <li>
+              <i class="fas fa-download me-2 text-success"></i>Remotely
+              installed <strong>ALEPH v21 and v23</strong> software for library
+              management.
+            </li>
+            <li>
+              <i class="fas fa-terminal me-2 text-success"></i>Collaborated in
+              the maintenance of systems written in <strong>VI</strong> and
+              <strong>Java</strong>.
+            </li>
+            <li>
+              <i class="fas fa-database me-2 text-success"></i>Performed basic
+              data management with <strong>MariaDB</strong> for record queries
+              and updates.
+            </li>
+            <li>
+              <i class="fas fa-user-friends me-2 text-success"></i>Provided
+              technical support to administrative staff in the use of digital
+              query tools.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Formación y Certificaciones -->
+      <div class="row mb-4 g-4">
+        <!-- Education -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-graduation-cap me-2 text-primary"></i>Education
+              </h5>
+              <p class="mb-1">
+                <strong>Bachelor's Degree in Informatics</strong>
+              </p>
+              <h6 class="text-muted mb-2">Universidad Latina (UNILA)</h6>
+              <p class="mb-0">2016 - 2020</p>
+              <hr />
+              <h5 class="card-title">
+                <i class="fas fa-graduation-cap me-2 text-primary"></i>Quick
+                Learning
+              </h5>
+              <p class="mb-0">2024 - Present</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-certificate me-2 text-primary"></i
+                >Certifications
+              </h5>
+              <ul class="list-unstyled mb-3">
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>SCRUM
+                  Master Certified – Udemy
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Server
+                  Administration – Capacítate para el Empleo
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Database
+                  Administration – Capacítate para el Empleo
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Phonetic
+                  Clinic 1 – Quick Learning
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Adult
+                  Learning – Capacítate para el Empleo
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Microsoft
+                  Learn – Development with .NET, Blazor, and Azure (2023–2024)
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i>Cloud
+                  Computing and Azure Architecture Fundamentals
+                </li>
+              </ul>
+              <a
+                href="https://learn.microsoft.com/en-us/users/isaacjeo96@outlook.com/"
+                class="btn btn-outline-info btn-sm"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt me-1"></i> View Microsoft
+                Learn Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+      document.getElementById("print-pdf").addEventListener("click", () => {
+        window.print();
+      });
+    </script>
+
+    <style>
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+      }
+    </style>
+  </body>
+  <footer class="footer-with-signature text-center py-3">
+    <div class="container d-flex justify-content-center align-items-center">
+      <p class="mb-0 me-3 text-muted">
+        © 2025 Isaac Jair Espinoza Ocampo. All rights reserved.
+      </p>
+      <img
+        src="assets/img/signature-isaac.png"
+        alt="Firma de Isaac"
+        class="footer-signature"
+      />
+    </div>
+  </footer>
+</html>
