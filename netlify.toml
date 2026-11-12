@@ -1,10 +1,16 @@
+# La raíz del sitio muestra el CV en inglés sin cambiar la URL.
 [[redirects]]
-  from = "index.html"
-  to = "cv-es.html"
-  status = 301
-  force = false
-  query = {path = ":cvijeo/cv-es.html"}
-  conditions = {Language = ["es"], Country = ["UMX"], Role = ["admin"]}
+  from = "/"
+  to = "/cv-en.html"
+  status = 200
 
+# Accesos cortos: /en y /es
+[[redirects]]
+  from = "/en"
+  to = "/cv-en.html"
+  status = 200
 
-
+[[redirects]]
+  from = "/es"
+  to = "/cv-es.html"
+  status = 200
