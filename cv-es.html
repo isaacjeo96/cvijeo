@@ -3,7 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Isaac Espinoza</title>
+    <title>Isaac Espinoza – Desarrollador .NET</title>
+    <meta
+      name="description"
+      content="CV de Isaac Jair Espinoza Ocampo, desarrollador .NET con más de 6 años de experiencia en .NET Core, C#, SQL Server y APIs REST. Ciudad de México."
+    />
+    <link rel="canonical" href="https://developerisaacjeo96.netlify.app/es" />
+    <link rel="alternate" hreflang="en" href="https://developerisaacjeo96.netlify.app/" />
+    <link rel="alternate" hreflang="es" href="https://developerisaacjeo96.netlify.app/es" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+    <!-- Vista previa al compartir (LinkedIn, WhatsApp, etc.) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:url" content="https://developerisaacjeo96.netlify.app/es" />
+    <meta property="og:title" content="Isaac Espinoza – Desarrollador .NET" />
+    <meta
+      property="og:description"
+      content="Más de 6 años desarrollando aplicaciones con .NET Core, C#, SQL Server y APIs REST para el sector público y privado."
+    />
+    <meta property="og:image" content="https://developerisaacjeo96.netlify.app/assets/img/profile-isaac.jpg" />
+    <meta name="twitter:card" content="summary" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -17,10 +37,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Tu estilo personalizado -->
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="css/estilos.css" />
 
-    <!-- Script personalizado -->
+    <!-- Script propio -->
     <script defer src="js/main.js"></script>
   </head>
 
@@ -29,22 +49,23 @@
       <!-- Botones -->
       <nav
         class="d-flex flex-wrap justify-content-end gap-2 mb-2 no-print"
-        aria-label="Herramientas CV"
+        aria-label="Herramientas del CV"
       >
         <button
           id="toggle-dark"
+          type="button"
           class="btn btn-sm btn-outline-secondary w-auto"
+          data-label-dark="Modo oscuro"
+          data-label-light="Modo claro"
+          aria-pressed="false"
         >
-          <i class="fas fa-moon me-1"></i> Modo Oscuro
+          <i class="fas fa-moon me-1"></i> <span class="label">Modo oscuro</span>
         </button>
-        <button
-          onclick="window.location.href='cv-en.html'"
-          class="btn btn-sm btn-outline-info w-auto"
-        >
-          <i class="fas fa-language me-1"></i> English Version
-        </button>
-        <a href="assets/pdf/CvIJEOEspañol.pdf" download class="btn btn-danger">
-          <i class="fas fa-file-pdf me-2"></i> PDF
+        <a href="./" class="btn btn-sm btn-outline-info w-auto" hreflang="en" lang="en">
+          <i class="fas fa-language me-1"></i> English version
+        </a>
+        <a href="assets/pdf/CvIJEO-es.pdf" download class="btn btn-sm btn-danger w-auto">
+          <i class="fas fa-file-pdf me-1"></i> PDF
         </a>
       </nav>
 
@@ -61,63 +82,59 @@
           <div class="col-md-9">
             <div class="card-body">
               <h1 class="card-title mb-1">Isaac Jair Espinoza Ocampo</h1>
-              <h6 class="card-text text-muted fs-5">
+              <p class="card-text text-muted fs-5 mb-0">
                 <i class="fas fa-laptop-code me-2"></i>Desarrollador .NET
-                <!-- <span class="mx-2">|</span>
-                <i class="fas fa-user-graduate me-2"></i>Licenciado en
-                Informática -->
-              </h6>
+              </p>
             </div>
           </div>
         </div>
       </header>
 
       <!-- Perfil Profesional -->
-      <div class="card mb-4 shadow">
+      <section class="card mb-4 shadow">
         <div class="card-body">
           <h2 class="card-title">
-            <i class="fas fa-user me-2 text-primary"></i>Perfil Profesional
+            <i class="fas fa-user me-2 text-primary"></i>Perfil profesional
           </h2>
           <p class="card-text">
-            Soy un desarrollador .NET con más de 5 años de experiencia en el
-            desarrollo de aplicaciones tanto para el sector público como
-            privado. Actualmente colaboro en el
+            Soy desarrollador .NET con más de 6 años de experiencia en el
+            desarrollo de aplicaciones para el sector público y privado.
+            Actualmente colaboro en el
             <strong>Consejo de la Judicatura Federal</strong>, donde participo
             en el diseño y mantenimiento de sistemas administrativos internos
-            basados en tecnologías como
-            <strong>.NET Core, SQL Server y REST APIs</strong>.
+            basados en <strong>.NET Core, SQL Server y APIs REST</strong>.
           </p>
           <p class="card-text">
-            He trabajado también en soluciones para e-commerce y aseguradoras,
-            implementando arquitecturas MVC, validaciones robustas con jQuery y
-            C#, y el consumo de servicios SOAP y REST. Me apasiona el
-            aprendizaje continuo, la optimización de procesos y el desarrollo
-            limpio, modular y escalable.
+            También he trabajado en soluciones para e-commerce y aseguradoras,
+            implementando arquitecturas MVC, validaciones del lado cliente
+            (jQuery) y servidor (C#), y el consumo de servicios SOAP y REST. Me
+            apasionan el aprendizaje continuo, la optimización de procesos y el
+            desarrollo de código limpio, modular y escalable.
           </p>
           <p class="card-text mb-0">
-            Además, tengo sólidos conocimientos en frontend con
+            Además, tengo sólidos conocimientos de frontend con
             <strong>HTML, CSS, JavaScript y Bootstrap</strong>, y me adapto
             fácilmente a nuevos retos y tecnologías.
           </p>
         </div>
-      </div>
+      </section>
 
-      <!-- Contacto | Skills | Idiomas -->
+      <!-- Contacto | Habilidades | Idiomas -->
       <div class="row mb-4 g-4">
         <!-- Contacto -->
         <div class="col-md-3">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">
+              <h2 class="card-title h5">
                 <i class="fas fa-address-book me-2 text-primary"></i>Contacto
-              </h5>
+              </h2>
               <p class="mb-2">
                 <i class="fas fa-envelope text-secondary me-2"></i
                 ><a href="mailto:isaacjeo96@gmail.com">isaacjeo96@gmail.com</a>
               </p>
               <p class="mb-2">
                 <i class="fas fa-phone text-secondary me-2"></i
-                ><a href="tel:5527427050">5527427050</a>
+                ><a href="tel:+525527427050">+52 55 2742 7050</a>
               </p>
               <p class="mb-3">
                 <i class="fas fa-map-marker-alt text-secondary me-2"></i>Ciudad
@@ -127,36 +144,42 @@
                 <a
                   href="https://wa.me/525527427050?text=Hola%20Isaac,%20vi%20tu%20CV%20y%20me%20interesa%20contactarte."
                   target="_blank"
+                  rel="noopener"
                   class="btn btn-success w-100"
                 >
                   <i class="fab fa-whatsapp me-2"></i>Enviar WhatsApp
                 </a>
                 <a
-                  href="mailto:isaacjeo96@gmail.com?subject=Interesado%20en%20tu%20CV&body=Hola%20Isaac,%20me%20gustaría%20hablar%20contigo%20sobre%20una%20oportunidad."
+                  href="mailto:isaacjeo96@gmail.com?subject=Interesado%20en%20tu%20CV&body=Hola%20Isaac,%20me%20gustar%C3%ADa%20hablar%20contigo%20sobre%20una%20oportunidad."
                   class="btn btn-primary w-100"
                 >
-                  <i class="fas fa-envelope me-2"></i>Enviar Correo
+                  <i class="fas fa-envelope me-2"></i>Enviar correo
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Skills Técnicos -->
+        <!-- Habilidades técnicas -->
         <div class="col-md-3">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">
-                <i class="fas fa-tools me-2 text-primary"></i>Skills Técnicos
-              </h5>
+              <h2 class="card-title h5">
+                <i class="fas fa-tools me-2 text-primary"></i>Habilidades
+                técnicas
+              </h2>
               <ul class="list-unstyled mb-0">
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i>.NET Core
-                  / Framework
+                  / Framework (C#)
                 </li>
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i>SQL
                   Server / LINQ / EF
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-success me-2"></i
+                  >Elasticsearch
                 </li>
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i>HTML,
@@ -168,7 +191,7 @@
                 </li>
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i>APIs REST
-                  & SOAP
+                  y SOAP
                 </li>
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i>Git,
@@ -183,22 +206,23 @@
         <div class="col-md-3">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">
+              <h2 class="card-title h5">
                 <i class="fas fa-language me-2 text-primary"></i>Idiomas
-              </h5>
+              </h2>
               <p class="mb-2"><strong>Español:</strong> Nativo</p>
               <p class="mb-3"><strong>Inglés:</strong> B2</p>
 
               <hr />
 
-              <h6 class="text-muted mb-2">
+              <h3 class="h6 text-muted mb-2">
                 <i class="fas fa-link me-2 text-primary"></i>Perfiles
-                Profesionales
-              </h6>
+                profesionales
+              </h3>
               <div class="d-flex flex-wrap gap-2">
                 <a
                   href="https://github.com/isaacjeo96"
                   target="_blank"
+                  rel="noopener"
                   class="btn btn-outline-dark btn-sm"
                 >
                   <i class="fab fa-github me-1"></i> GitHub
@@ -206,6 +230,7 @@
                 <a
                   href="https://www.linkedin.com/in/isaacjeo96/"
                   target="_blank"
+                  rel="noopener"
                   class="btn btn-outline-primary btn-sm"
                 >
                   <i class="fab fa-linkedin me-1"></i> LinkedIn
@@ -215,14 +240,14 @@
           </div>
         </div>
 
-        <!-- Habilidades Blandas -->
+        <!-- Habilidades blandas -->
         <div class="col-md-3">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">
+              <h2 class="card-title h5">
                 <i class="fas fa-user-friends me-2 text-primary"></i>Habilidades
-                Blandas
-              </h5>
+                blandas
+              </h2>
               <ul class="list-unstyled mb-0">
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i>Trabajo
@@ -254,11 +279,12 @@
         </div>
       </div>
 
-      <!-- Experiencia Profesional: Consejo de la Judicatura Federal -->
-      <div class="card mb-4 shadow position-relative overflow-hidden">
+      <!-- Experiencia: Consejo de la Judicatura Federal -->
+      <section class="card mb-4 shadow position-relative overflow-hidden">
         <img
           src="assets/img/logo-cjf.png"
-          alt="Logo CJF"
+          alt=""
+          aria-hidden="true"
           class="card-bg-logo"
         />
         <div class="card-body position-relative">
@@ -266,20 +292,20 @@
             <i class="fas fa-briefcase me-2 text-primary"></i>Consejo de la
             Judicatura Federal
           </h2>
-          <h6 class="text-muted mb-3">
-            Desarrollador .NET | Noviembre 2023 - Actualidad
-          </h6>
+          <p class="h6 text-muted mb-3">
+            Desarrollador .NET | Noviembre 2023 – Actualidad
+          </p>
           <ul class="mb-0">
             <li>
               <i class="fas fa-code me-2 text-success"></i>Desarrollo y
-              mantenimiento de sistemas administrativos internos usando .NET
-              Framework y .NET Core utilizando C#.
+              mantenimiento de sistemas administrativos internos con .NET
+              Framework y .NET Core (C#).
             </li>
             <li>
               <i class="fas fa-search me-2 text-success"></i>Implementación de
-              un sistema CRUD completo usando
-              <strong>ElasticSearch</strong> como motor de búsqueda, simulando
-              una base de datos relacional para consultas ágiles.
+              un sistema CRUD completo sobre <strong>Elasticsearch</strong> como
+              almacén de datos principal, con búsquedas rápidas de texto
+              completo.
             </li>
             <li>
               <i class="fas fa-network-wired me-2 text-success"></i>Integración
@@ -307,11 +333,11 @@
             </li>
             <li>
               <i class="fas fa-user-shield me-2 text-success"></i>Validaciones
-              avanzadas de seguridad y control de datos sensibles.
+              de seguridad y control de acceso a datos sensibles.
             </li>
             <li>
               <i class="fas fa-chart-line me-2 text-success"></i>Optimización de
-              procesos internos con automatización en el back office.
+              procesos internos mediante la automatización del back office.
             </li>
             <li>
               <i class="fas fa-file-alt me-2 text-success"></i>Documentación
@@ -324,13 +350,14 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <!-- Experiencia Profesional: DIGIS01 -->
-      <div class="card mb-4 shadow position-relative overflow-hidden">
+      <!-- Experiencia: DIGIS01 -->
+      <section class="card mb-4 shadow position-relative overflow-hidden">
         <img
           src="assets/img/logo-digis01.png"
-          alt="Logo Digis01"
+          alt=""
+          aria-hidden="true"
           class="card-bg-logo"
         />
         <div class="card-body position-relative">
@@ -338,18 +365,18 @@
             <i class="fas fa-briefcase me-2 text-primary"></i>DIGIS01 Soluciones
             Digitales
           </h2>
-          <h6 class="text-muted mb-3">
-            Desarrollador .NET | Agosto 2020 - Noviembre 2023
-          </h6>
+          <p class="h6 text-muted mb-3">
+            Desarrollador .NET | Agosto 2020 – Noviembre 2023
+          </p>
           <ul class="mb-0">
             <li>
-              <i class="fas fa-store me-2 text-success"></i>Desarrollo de
-              plataforma de e-commerce con .NET Framework para gestión de
+              <i class="fas fa-store me-2 text-success"></i>Desarrollo de una
+              plataforma de e-commerce con .NET Framework para la gestión de
               productos y ventas.
             </li>
             <li>
               <i class="fas fa-shield-alt me-2 text-success"></i>Participación
-              en sistema para aseguradora usando .NET Core, con consumo de
+              en un sistema para aseguradora con .NET Core, con consumo de
               servicios SOAP y REST.
             </li>
             <li>
@@ -358,7 +385,7 @@
             </li>
             <li>
               <i class="fas fa-layer-group me-2 text-success"></i>Estructuración
-              de aplicaciones en arquitectura por capas para mejorar
+              de aplicaciones en arquitectura por capas para mejorar la
               mantenibilidad y escalabilidad.
             </li>
             <li>
@@ -367,16 +394,17 @@
             </li>
             <li>
               <i class="fas fa-file-code me-2 text-success"></i>Creación de
-              stored procedures para operaciones CRUD de productos y usuarios.
+              procedimientos almacenados para operaciones CRUD de productos y
+              usuarios.
             </li>
             <li>
               <i class="fa-solid fa-user-check me-2 text-success"></i
-              >Validaciones de datos usando DataAnnotations del lado del
-              servidor con C#.
+              >Validaciones de datos del lado del servidor con DataAnnotations en
+              C#.
             </li>
             <li>
-              <i class="fas fa-bolt me-2 text-success"></i>Uso de scaffold en
-              Visual Studio para generación automática del modelo de base de
+              <i class="fas fa-bolt me-2 text-success"></i>Uso de scaffolding en
+              Visual Studio (EF database-first) para generar los modelos de
               datos.
             </li>
             <li>
@@ -386,37 +414,38 @@
             </li>
             <li>
               <i class="fas fa-users-cog me-2 text-success"></i>Liderazgo de
-              equipo en proyectos internos, asignación de tareas y supervisión
+              equipos en proyectos internos: asignación de tareas y supervisión
               técnica.
             </li>
             <li>
-              <i class="fas fa-boxes me-2 text-success"></i>Gestión
-              administrativa de inventario de TI, asegurando disponibilidad y
-              control de equipo.
+              <i class="fas fa-boxes me-2 text-success"></i>Gestión del
+              inventario de TI, asegurando la disponibilidad y el control del
+              equipo.
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <!-- Experiencia Profesional: UNAM -->
-      <div class="card mb-4 shadow position-relative overflow-hidden">
+      <!-- Experiencia: UNAM -->
+      <section class="card mb-4 shadow position-relative overflow-hidden">
         <img
           src="assets/img/logo-unam.png"
-          alt="Logo UNAM"
+          alt=""
+          aria-hidden="true"
           class="card-bg-logo"
         />
         <div class="card-body position-relative">
           <h2 class="card-title">
             <i class="fas fa-briefcase me-2 text-primary"></i>Dirección General
-            de Bibliotecas UNAM
+            de Bibliotecas, UNAM
           </h2>
-          <h6 class="text-muted mb-3">
-            Servicio Social | Octubre 2019 - Marzo 2020
-          </h6>
+          <p class="h6 text-muted mb-3">
+            Servicio social | Octubre 2019 – Marzo 2020
+          </p>
           <ul class="mb-0">
             <li>
               <i class="fas fa-globe me-2 text-success"></i>Creación y
-              modificación de portales web institucionales usando
+              modificación de portales web institucionales con
               <strong>Joomla</strong> y <strong>HTML</strong>.
             </li>
             <li>
@@ -426,7 +455,7 @@
             </li>
             <li>
               <i class="fas fa-terminal me-2 text-success"></i>Colaboración en
-              mantenimiento de sistemas escritos en <strong>VI</strong> y
+              el mantenimiento de sistemas desarrollados en
               <strong>Java</strong>.
             </li>
             <li>
@@ -441,43 +470,41 @@
             </li>
           </ul>
         </div>
-      </div>
-      <!-- Formación y Certificaciones -->
+      </section>
+
+      <!-- Formación y certificaciones -->
       <div class="row mb-4 g-4">
         <!-- Educación -->
         <div class="col-md-6">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">
+              <h2 class="card-title h5">
                 <i class="fas fa-graduation-cap me-2 text-primary"></i>Formación
-                Académica
-              </h5>
+                académica
+              </h2>
               <p class="mb-1"><strong>Licenciatura en Informática</strong></p>
-              <h6 class="text-muted mb-2">Universidad Latina (UNILA)</h6>
-              <p class="mb-0">2016 - 2020</p>
+              <p class="h6 text-muted mb-2">Universidad Latina (UNILA)</p>
+              <p class="mb-0">2016 – 2020</p>
               <hr />
-              <h5 class="card-title">
-                <i class="fas fa-graduation-cap me-2 text-primary"></i>Quick
-                Learning
-              </h5>
-              <p class="mb-0">2024 - Actualidad</p>
+              <p class="mb-1"><strong>Inglés</strong></p>
+              <p class="h6 text-muted mb-2">Quick Learning</p>
+              <p class="mb-0">2024 – Actualidad</p>
             </div>
           </div>
         </div>
 
-        <!-- Certificaciones -->
+        <!-- Certificaciones y cursos -->
         <div class="col-md-6">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">
+              <h2 class="card-title h5">
                 <i class="fas fa-certificate me-2 text-primary"></i
-                >Certificaciones
-              </h5>
+                >Certificaciones y cursos
+              </h2>
               <ul class="list-unstyled mb-3">
-                <!-- Anteriores -->
                 <li>
-                  <i class="fas fa-check-circle text-success me-2"></i>SCRUM
-                  Master Certified – Udemy
+                  <i class="fas fa-check-circle text-success me-2"></i>Scrum
+                  Master – Udemy
                 </li>
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i
@@ -495,23 +522,21 @@
                   <i class="fas fa-check-circle text-success me-2"></i>El
                   Aprendizaje en los Adultos – Capacítate para el Empleo
                 </li>
-
-                <!-- Microsoft Learn -->
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i>Microsoft
-                  Learn – Desarrollo con .NET, Blazor y Azure (2023-2024)
+                  Learn – Desarrollo con .NET, Blazor y Azure (2023–2024)
                 </li>
                 <li>
                   <i class="fas fa-check-circle text-success me-2"></i>Cloud
-                  Computing y fundamentos de arquitectura Azure
+                  Computing y fundamentos de arquitectura en Azure
                 </li>
               </ul>
 
-              <!-- Botón opcional -->
               <a
                 href="https://learn.microsoft.com/en-us/users/isaacjeo96@outlook.com/"
                 class="btn btn-outline-info btn-sm"
                 target="_blank"
+                rel="noopener"
               >
                 <i class="fas fa-external-link-alt me-1"></i> Ver perfil en
                 Microsoft Learn
@@ -526,7 +551,8 @@
     <footer class="footer-with-signature text-center py-3">
       <div class="container d-flex justify-content-center align-items-center">
         <p class="mb-0 me-3 text-muted">
-          © 2025 Isaac Jair Espinoza Ocampo. Todos los derechos reservados.
+          © <span id="year">2026</span> Isaac Jair Espinoza Ocampo. Todos los
+          derechos reservados.
         </p>
         <img
           src="assets/img/signature-isaac.png"

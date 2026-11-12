@@ -1,15 +1,17 @@
-# La raíz del sitio muestra el CV en inglés sin cambiar la URL.
-[[redirects]]
-  from = "/"
-  to = "/cv-en.html"
-  status = 200
+# index.html es el CV en inglés, así que la raíz del sitio lo muestra directo.
 
-# Accesos cortos: /en y /es
+# Ligas viejas o cortas al inglés -> raíz
+[[redirects]]
+  from = "/cv-en.html"
+  to = "/"
+  status = 301
+
 [[redirects]]
   from = "/en"
-  to = "/cv-en.html"
-  status = 200
+  to = "/"
+  status = 301
 
+# Liga corta al español (la URL se queda como /es)
 [[redirects]]
   from = "/es"
   to = "/cv-es.html"

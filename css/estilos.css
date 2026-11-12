@@ -217,3 +217,14 @@ body.dark-mode .footer-signature {
     height: 140px;
   }
 }
+
+body.dark-mode .footer-with-signature {
+  background-color: var(--color-azul-oscuro);
+  border-top-color: #444;
+}
+
+/* Impresión: ocultar botones */
+@media print {
+  .no-print { display: none !important; }
+  .card { opacity: 1; transform: none; animation: none; box-shadow: none; }
+}
