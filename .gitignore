@@ -1,0 +1,6 @@
+.DS_Store
+.tmp.driveupload/
+.tmp.drivedownload/
+Icon\r
+*.icloud
+.vscode/
