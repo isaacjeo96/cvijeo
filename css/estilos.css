@@ -264,7 +264,12 @@ body.dark-mode .footer-with-signature {
     break-inside: avoid;
     page-break-inside: avoid;
   }
-  /* Ninguna tarjeta se parte entre hojas; si no cabe, pasa completa a la siguiente */
+  /* Las tarjetas de experiencia pueden continuar en la siguiente hoja
+     (sin cortar viñetas ni separar el título de su contenido) */
+  section.card { break-inside: auto; page-break-inside: auto; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  section.card li { break-inside: avoid; }
+  section.card h2, section.card p { break-after: avoid; break-inside: avoid; }
+  section.card ul { orphans: 3; widows: 3; }
   .h-100 { height: auto !important; }
   .row { break-inside: avoid; }
   .card-body { padding: 0.75rem 1rem; }
