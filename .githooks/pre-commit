@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Regenera los PDFs del CV cuando el commit incluye cambios en la página,
+# para que lo que se descarga sea siempre igual a lo que se ve en la web.
+if git diff --cached --name-only | grep -qE '^(index\.html|cv-es\.html|css/|js/|assets/img/)'; then
+  echo "Regenerando PDFs del CV..."
+  bash scripts/build-pdf.sh || { echo "No se pudieron generar los PDFs; commit cancelado." >&2; exit 1; }
+  git add assets/pdf/CvIJEO-en.pdf assets/pdf/CvIJEO-es.pdf
+fi

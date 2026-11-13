@@ -223,8 +223,64 @@ body.dark-mode .footer-with-signature {
   border-top-color: #444;
 }
 
-/* Impresión: ocultar botones */
+/* Solo aparece en el PDF */
+.print-only { display: none; }
+
+/* ================= IMPRESIÓN / PDF =================
+   Los PDFs de assets/pdf se generan desde aquí (scripts/build-pdf.sh). */
+@page {
+  size: Letter;
+  margin: 12mm 12mm 12mm 12mm;
+}
+
 @media print {
+  html { font-size: 12px; }
+  body { line-height: 1.4; }
+  body {
+    background: #fff !important;
+    color: var(--color-azul-oscuro) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
   .no-print { display: none !important; }
-  .card { opacity: 1; transform: none; animation: none; box-shadow: none; }
+  .print-only { display: block !important; }
+
+  main.container { max-width: none; padding: 0 !important; }
+
+  /* Mantener las columnas de escritorio en la hoja */
+  .row { display: flex !important; flex-wrap: wrap; }
+  .col-md-3 { flex: 0 0 25% !important; max-width: 25% !important; }
+  .col-md-6 { flex: 0 0 50% !important; max-width: 50% !important; }
+  .col-md-9 { flex: 0 0 75% !important; max-width: 75% !important; }
+  .row.g-4 { --bs-gutter-x: 0.75rem; --bs-gutter-y: 0.75rem; }
+  .mb-4 { margin-bottom: 0.75rem !important; }
+
+  .card {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    box-shadow: none !important;
+    border: 1px solid #d5d9e0 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  /* Ninguna tarjeta se parte entre hojas; si no cabe, pasa completa a la siguiente */
+  .h-100 { height: auto !important; }
+  .row { break-inside: avoid; }
+  .card-body { padding: 0.75rem 1rem; }
+  header.card img { max-width: 130px; }
+  header.card .p-3 { padding: 0.5rem !important; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.45rem; }
+  .card-title.h5, .h5 { font-size: 1.1rem; }
+  .card-bg-logo { opacity: 0.05; }
+  .btn { padding: 0.15rem 0.5rem; font-size: 0.85rem; }
+
+  .footer-with-signature {
+    margin-top: 0.5rem;
+    border-top: 1px solid #d5d9e0;
+    background: #fff !important;
+    break-inside: avoid;
+  }
+  .footer-signature { width: 60px; }
 }
